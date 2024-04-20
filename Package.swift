@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "PasscodeUI",
-            dependencies: [],
+            path: "PasscodeUI",
         ),
     ],
     swiftLanguageVersions: [.v5]
