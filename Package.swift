@@ -16,10 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "PasscodeUI",
-            path: "PasscodeUI",
-            exclude: [
-                "Info.plist",
-            ]
+            dependencies: [],
         ),
     ],
     swiftLanguageVersions: [.v5]
