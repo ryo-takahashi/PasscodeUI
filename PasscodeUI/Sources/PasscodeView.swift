@@ -34,7 +34,6 @@ public struct PasscodeView: View {
                     BothView(passcode: passcode)
                 }
             }
-            .offset(y: isShowLockView ? 0 : -100)
             .opacity(isShowLockView ? 1 : 0)
         }
         .onAppear(perform: onAppear)
