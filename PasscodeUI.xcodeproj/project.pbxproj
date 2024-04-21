@@ -7,18 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A5CF6DD2BD4F93D00BD9A1E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CF6D82BD4F93D00BD9A1E /* Localizable.xcstrings */; };
-		5A5CF6DE2BD4F93D00BD9A1E /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6D92BD4F93D00BD9A1E /* Shake.swift */; };
-		5A5CF6DF2BD4F93D00BD9A1E /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */; };
-		5A5CF6E02BD4F93D00BD9A1E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */; };
-		5A5CF6E12BD4F93D00BD9A1E /* SetPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */; };
+		5A15FDE42BD50A3C008540D2 /* PasscodeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5A15FDE32BD50A3C008540D2 /* PasscodeUI */; };
 		5AA09E192BD3F35F006BC8E5 /* PasscodeUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */; };
 		5AA09E1B2BD3F35F006BC8E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */; };
 		5AA09E1D2BD3F361006BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA09E1C2BD3F361006BC8E5 /* Assets.xcassets */; };
 		5AA09E202BD3F361006BC8E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA09E1F2BD3F361006BC8E5 /* Preview Assets.xcassets */; };
 		5AA09E2A2BD3F361006BC8E5 /* PasscodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E292BD3F361006BC8E5 /* PasscodeUITests.swift */; };
-		5AA09E522BD3F439006BC8E5 /* PasscodeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA09E4A2BD3F439006BC8E5 /* PasscodeUI.framework */; };
-		5AA09E532BD3F439006BC8E5 /* PasscodeUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA09E4A2BD3F439006BC8E5 /* PasscodeUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +21,6 @@
 			containerPortal = 5AA09E0D2BD3F35F006BC8E5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5AA09E142BD3F35F006BC8E5;
-			remoteInfo = PasscodeUI;
-		};
-		5AA09E502BD3F439006BC8E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AA09E0D2BD3F35F006BC8E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5AA09E492BD3F439006BC8E5;
 			remoteInfo = PasscodeUI;
 		};
 /* End PBXContainerItemProxy section */
@@ -45,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5AA09E532BD3F439006BC8E5 /* PasscodeUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,11 +40,6 @@
 
 /* Begin PBXFileReference section */
 		5A5CF6C62BD4F06E00BD9A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		5A5CF6D82BD4F93D00BD9A1E /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		5A5CF6D92BD4F93D00BD9A1E /* Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
-		5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockType.swift; sourceTree = "<group>"; };
-		5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
-		5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasscodeView.swift; sourceTree = "<group>"; };
 		5AA09E152BD3F35F006BC8E5 /* PasscodeUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeUIApp.swift; sourceTree = "<group>"; };
 		5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,8 +47,6 @@
 		5AA09E1F2BD3F361006BC8E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AA09E252BD3F361006BC8E5 /* PasscodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasscodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA09E292BD3F361006BC8E5 /* PasscodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeUITests.swift; sourceTree = "<group>"; };
-		5AA09E432BD3F3A7006BC8E5 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		5AA09E4A2BD3F439006BC8E5 /* PasscodeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PasscodeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AA09E522BD3F439006BC8E5 /* PasscodeUI.framework in Frameworks */,
+				5A15FDE42BD50A3C008540D2 /* PasscodeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,35 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AA09E472BD3F439006BC8E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A5CF6D72BD4F93D00BD9A1E /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				5A5CF6D82BD4F93D00BD9A1E /* Localizable.xcstrings */,
-				5A5CF6D92BD4F93D00BD9A1E /* Shake.swift */,
-				5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */,
-				5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */,
-				5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		5AA09E0C2BD3F35F006BC8E5 = {
 			isa = PBXGroup;
 			children = (
-				5AA09E432BD3F3A7006BC8E5 /* Package.swift */,
 				5AA09E172BD3F35F006BC8E5 /* PasscodeUIDemo */,
 				5AA09E282BD3F361006BC8E5 /* PasscodeUITests */,
-				5AA09E4B2BD3F439006BC8E5 /* PasscodeUI */,
 				5AA09E162BD3F35F006BC8E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,7 +82,6 @@
 			children = (
 				5AA09E152BD3F35F006BC8E5 /* PasscodeUIDemo.app */,
 				5AA09E252BD3F361006BC8E5 /* PasscodeUITests.xctest */,
-				5AA09E4A2BD3F439006BC8E5 /* PasscodeUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,25 +114,7 @@
 			path = PasscodeUITests;
 			sourceTree = "<group>";
 		};
-		5AA09E4B2BD3F439006BC8E5 /* PasscodeUI */ = {
-			isa = PBXGroup;
-			children = (
-				5A5CF6D72BD4F93D00BD9A1E /* Sources */,
-			);
-			path = PasscodeUI;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		5AA09E452BD3F439006BC8E5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5AA09E142BD3F35F006BC8E5 /* PasscodeUIDemo */ = {
@@ -190,9 +129,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				5AA09E512BD3F439006BC8E5 /* PBXTargetDependency */,
 			);
 			name = PasscodeUIDemo;
+			packageProductDependencies = (
+				5A15FDE32BD50A3C008540D2 /* PasscodeUI */,
+			);
 			productName = PasscodeUI;
 			productReference = 5AA09E152BD3F35F006BC8E5 /* PasscodeUIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,24 +156,6 @@
 			productReference = 5AA09E252BD3F361006BC8E5 /* PasscodeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5AA09E492BD3F439006BC8E5 /* PasscodeUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AA09E542BD3F439006BC8E5 /* Build configuration list for PBXNativeTarget "PasscodeUI" */;
-			buildPhases = (
-				5AA09E452BD3F439006BC8E5 /* Headers */,
-				5AA09E462BD3F439006BC8E5 /* Sources */,
-				5AA09E472BD3F439006BC8E5 /* Frameworks */,
-				5AA09E482BD3F439006BC8E5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PasscodeUI;
-			productName = PasscodeUI;
-			productReference = 5AA09E4A2BD3F439006BC8E5 /* PasscodeUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,10 +173,6 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 5AA09E142BD3F35F006BC8E5;
 					};
-					5AA09E492BD3F439006BC8E5 = {
-						CreatedOnToolsVersion = 15.2;
-						LastSwiftMigration = 1520;
-					};
 				};
 			};
 			buildConfigurationList = 5AA09E102BD3F35F006BC8E5 /* Build configuration list for PBXProject "PasscodeUI" */;
@@ -265,13 +184,15 @@
 				Base,
 			);
 			mainGroup = 5AA09E0C2BD3F35F006BC8E5;
+			packageReferences = (
+				5A15FDE22BD50A3C008540D2 /* XCLocalSwiftPackageReference "" */,
+			);
 			productRefGroup = 5AA09E162BD3F35F006BC8E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5AA09E142BD3F35F006BC8E5 /* PasscodeUIDemo */,
 				5AA09E242BD3F361006BC8E5 /* PasscodeUITests */,
-				5AA09E492BD3F439006BC8E5 /* PasscodeUI */,
 			);
 		};
 /* End PBXProject section */
@@ -290,14 +211,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AA09E482BD3F439006BC8E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A5CF6DD2BD4F93D00BD9A1E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,17 +234,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AA09E462BD3F439006BC8E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A5CF6E02BD4F93D00BD9A1E /* PasscodeView.swift in Sources */,
-				5A5CF6E12BD4F93D00BD9A1E /* SetPasscodeView.swift in Sources */,
-				5A5CF6DF2BD4F93D00BD9A1E /* PasscodeLockType.swift in Sources */,
-				5A5CF6DE2BD4F93D00BD9A1E /* Shake.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -339,11 +241,6 @@
 			isa = PBXTargetDependency;
 			target = 5AA09E142BD3F35F006BC8E5 /* PasscodeUIDemo */;
 			targetProxy = 5AA09E262BD3F361006BC8E5 /* PBXContainerItemProxy */;
-		};
-		5AA09E512BD3F439006BC8E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5AA09E492BD3F439006BC8E5 /* PasscodeUI */;
-			targetProxy = 5AA09E502BD3F439006BC8E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -470,7 +367,6 @@
 		5AA09E3A2BD3F361006BC8E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,7 +399,6 @@
 		5AA09E3B2BD3F361006BC8E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,79 +468,6 @@
 			};
 			name = Release;
 		};
-		5AA09E552BD3F439006BC8E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6RH4D4FPN2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.hachiware.PasscodeUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 15.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5AA09E562BD3F439006BC8E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6RH4D4FPN2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.hachiware.PasscodeUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 15.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -676,16 +498,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AA09E542BD3F439006BC8E5 /* Build configuration list for PBXNativeTarget "PasscodeUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AA09E552BD3F439006BC8E5 /* Debug */,
-				5AA09E562BD3F439006BC8E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5A15FDE22BD50A3C008540D2 /* XCLocalSwiftPackageReference "" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A15FDE32BD50A3C008540D2 /* PasscodeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PasscodeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AA09E0D2BD3F35F006BC8E5 /* Project object */;
 }
