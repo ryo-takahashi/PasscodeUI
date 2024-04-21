@@ -17,7 +17,13 @@ let package = Package(
     targets: [
         .target(
             name: "PasscodeUI",
-            path: "PasscodeUI"
+            path: "PasscodeUI",
+            sources: [
+                "Sources"
+            ],
+            resources: [
+                .process("Resources")
+            ]
         ),
     ],
     swiftLanguageVersions: [.v5]
