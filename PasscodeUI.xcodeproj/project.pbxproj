@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A54EDED2BD4DC4B0080519D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5A54EDEC2BD4DC4B0080519D /* Localizable.xcstrings */; };
 		5AA09E192BD3F35F006BC8E5 /* PasscodeUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */; };
 		5AA09E1B2BD3F35F006BC8E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */; };
 		5AA09E1D2BD3F361006BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA09E1C2BD3F361006BC8E5 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A54EDEC2BD4DC4B0080519D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		5AA09E152BD3F35F006BC8E5 /* PasscodeUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeUIApp.swift; sourceTree = "<group>"; };
 		5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				5AA09E582BD3F53F006BC8E5 /* Model */,
 				5AA09E5A2BD3F53F006BC8E5 /* View */,
+				5A54EDEC2BD4DC4B0080519D /* Localizable.xcstrings */,
 			);
 			path = PasscodeUI;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A54EDED2BD4DC4B0080519D /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

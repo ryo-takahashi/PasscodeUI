@@ -1,0 +1,36 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld" : {
+
+    },
+    "0" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Enter passcode" : {
+
+    },
+    "Enter your passcode" : {
+
+    },
+    "Locked" : {
+
+    },
+    "Open settings" : {
+
+    },
+    "Open the app settings and turn on Face ID permissions" : {
+
+    },
+    "Tap to unlock" : {
+
+    },
+    "Unlock the View" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -47,9 +47,9 @@ public struct PasscodeView: View {
                     Image(systemName: "lock.app.dashed")
                         .font(.title)
                         .foregroundStyle(.gray)
-                    Text("ロックされています")
+                    Text("Locked")
                         .font(.title3.bold())
-                    Text("アプリの設定を開き、Face IDのアクセス許可をオンにしてください")
+                    Text("Open the app settings and turn on Face ID permissions")
                         .font(.callout)
                         .foregroundStyle(.gray)
                         .multilineTextAlignment(.center)
@@ -57,12 +57,12 @@ public struct PasscodeView: View {
                         let url = URL(string: UIApplication.openSettingsURLString)!
                         UIApplication.shared.open(url, options: [:], completionHandler: nil)
                     } label: {
-                        Text("設定を開く")
+                        Text("Open settings")
                     }
                     Button {
                         isEnterPasscodeButton = true
                     } label: {
-                        Text("パスコードで解除")
+                        Text("Enter passcode")
                     }
                 }
                 .padding(.horizontal, 48)
@@ -73,7 +73,7 @@ public struct PasscodeView: View {
                     Button {
                         isEnterPasscodeButton = true
                     } label: {
-                        Text("パスコードを入力")
+                        Text("Enter passcode")
                     }
                 }
             }
@@ -91,9 +91,9 @@ public struct PasscodeView: View {
                 Image(systemName: "lock.app.dashed")
                     .font(.title)
                     .foregroundStyle(.gray)
-                Text("ロックされています")
+                Text("Locked")
                     .font(.title3.bold())
-                Text("アプリの設定を開き、Face IDのアクセス許可をオンにしてください")
+                Text("Open the app settings and turn on Face ID permissions")
                     .font(.callout)
                     .foregroundStyle(.gray)
                     .multilineTextAlignment(.center)
@@ -101,7 +101,7 @@ public struct PasscodeView: View {
                     let url = URL(string: UIApplication.openSettingsURLString)!
                     UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 } label: {
-                    Text("設定を開く")
+                    Text("Open settings")
                 }
             }
             .padding(.horizontal, 48)
@@ -115,7 +115,7 @@ public struct PasscodeView: View {
             Image(systemName: "faceid")
                 .font(.largeTitle)
             
-            Text("タップで解除")
+            Text("Tap to unlock")
                 .font(.caption2)
                 .foregroundStyle(.gray)
         }
@@ -141,7 +141,8 @@ public struct PasscodeView: View {
             let isBiometricAvailable = LAContext().canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
             if isBiometricAvailable {
                 /// Requesting Biometric Unlock
-                if let isSuccess = try? await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Unlock the View"), isSuccess {
+                let localizedReason = String(localized: "Unlock the View")
+                if let isSuccess = try? await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: localizedReason), isSuccess {
                     unlock()
                 }
             }
@@ -174,7 +175,7 @@ public struct PasscodeView: View {
     private func NumberPadPinContentView(isShowBackButton: Bool, correctPasscode: String) -> some View {
         Spacer()
         VStack(spacing: 16) {
-            Text("パスコードを入力")
+            Text("Enter passcode")
                 .font(.body)
             
             HStack(spacing: 10) {
@@ -249,7 +250,7 @@ public struct PasscodeView: View {
                     isEnterPasscodeButton = false
                     UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 } label: {
-                    Text("キャンセル")
+                    Text("Cancel")
                 }
                 .tint(.white)
             }
