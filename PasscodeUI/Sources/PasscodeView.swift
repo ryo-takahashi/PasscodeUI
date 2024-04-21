@@ -10,7 +10,6 @@ public struct PasscodeView: View {
     @State private var animateWrongPasscode: Bool = false
     @State private var isShowNoBiometricAccessNotice: Bool = false
     @State private var isEnterPasscodeButton: Bool = false
-    @State private var isShowLockView: Bool = true
     @Environment(\.verticalSizeClass) private var verticalSizeClass
     
     public init(passcodeLength: Int, lockType: PasscodeLockType, unlock: @escaping () -> Void) {
@@ -24,17 +23,14 @@ public struct PasscodeView: View {
             Rectangle()
                 .fill(.black)
                 .ignoresSafeArea()
-            Group {
-                switch lockType {
-                case .onlyBiometric:
-                    OnlyBiometricView()
-                case .onlyPasscode(let passcode):
-                    OnlyPasscodeView(passcode: passcode)
-                case .both(let passcode):
-                    BothView(passcode: passcode)
-                }
+            switch lockType {
+            case .onlyBiometric:
+                OnlyBiometricView()
+            case .onlyPasscode(let passcode):
+                OnlyPasscodeView(passcode: passcode)
+            case .both(let passcode):
+                BothView(passcode: passcode)
             }
-            .opacity(isShowLockView ? 1 : 0)
         }
         .onAppear(perform: onAppear)
         .environment(\.colorScheme, .dark)
@@ -146,7 +142,7 @@ public struct PasscodeView: View {
                 /// Requesting Biometric Unlock
                 let localizedReason = String(localized: "Unlock the View", bundle: .module)
                 if let isSuccess = try? await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: localizedReason), isSuccess {
-                    unlockWithAnimate()
+                    unlock()
                 }
             }
 
@@ -262,7 +258,7 @@ public struct PasscodeView: View {
             if newValue.count == passcodeLength {
                 let isValidPasscode = correctPasscode == inputPasscode
                 if isValidPasscode {
-                    unlockWithAnimate()
+                    unlock()
                 } else {
                     UINotificationFeedbackGenerator().notificationOccurred(.error)
                     inputPasscode = ""
@@ -270,18 +266,6 @@ public struct PasscodeView: View {
                 }
             }
         }
-    }
-    
-    private func unlockWithAnimate() {
-        Task {
-            withAnimation(.linear(duration: 0.1)) { // 0.1 seconds
-                isShowLockView = false
-            }
-            // sleep
-            try? await Task.sleep(nanoseconds: 100_000_000) // 0.1 seconds
-            unlock()
-        }
-        
     }
 }
 
