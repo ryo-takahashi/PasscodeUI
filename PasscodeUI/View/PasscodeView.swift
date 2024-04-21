@@ -25,8 +25,8 @@ public struct PasscodeView: View {
                 .ignoresSafeArea()
             
             switch lockType {
-            case .onlyFaceID:
-                OnlyFaceIDView()
+            case .onlyBiometric:
+                OnlyBiometricView()
             case .onlyPasscode(let passcode):
                 OnlyPasscodeView(passcode: passcode)
             case .both(let passcode):
@@ -85,7 +85,7 @@ public struct PasscodeView: View {
     }
     
     @ViewBuilder
-    private func OnlyFaceIDView() -> some View {
+    private func OnlyBiometricView() -> some View {
         if isShowNoBiometricAccessNotice {
             VStack(spacing: 16) {
                 Image(systemName: "lock.app.dashed")
@@ -129,7 +129,7 @@ public struct PasscodeView: View {
     
     private func onAppear() {
         switch lockType {
-        case .onlyFaceID, .both:
+        case .onlyBiometric, .both:
             requestBiometricUnlockIfNeeded()
         case .onlyPasscode:
             break
@@ -270,7 +270,7 @@ public struct PasscodeView: View {
 }
 
 #Preview {
-    PasscodeView(passcodeLength: 4, lockType: .onlyFaceID) {
+    PasscodeView(passcodeLength: 4, lockType: .onlyBiometric) {
         
     }
 }

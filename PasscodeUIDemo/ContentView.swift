@@ -14,7 +14,7 @@ struct ContentView: View {
                     NavigationLink("FaceID or Passcode", destination: PasscodeView(passcodeLength: 4, lockType: .both(passcode: "0000")) {
                         print("UNLOCK!!!")
                     })
-                    NavigationLink("Only FaceID", destination: PasscodeView(passcodeLength: 4, lockType: .onlyFaceID) {
+                    NavigationLink("Only FaceID", destination: PasscodeView(passcodeLength: 4, lockType: .onlyBiometric) {
                         print("UNLOCK!!!")
                     })
                     NavigationLink("Only Passcode", destination: PasscodeView(passcodeLength: 4, lockType: .onlyPasscode(passcode: "0000")) {

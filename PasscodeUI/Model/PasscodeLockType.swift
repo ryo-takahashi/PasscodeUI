@@ -1,5 +1,5 @@
 public enum PasscodeLockType {
-    case onlyFaceID
+    case onlyBiometric
     case onlyPasscode(passcode: String)
     case both(passcode: String)
 }
