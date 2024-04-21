@@ -85,6 +85,7 @@ public struct SetPasscodeView: View {
                 Button(action: {
                     if inputPasscode.count < passcodeLength {
                         inputPasscode.append("\(number)")
+                        UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                     }
                 }, label: {
                     Text("\(number)")
@@ -100,6 +101,7 @@ public struct SetPasscodeView: View {
             Button(action: {
                 if !inputPasscode.isEmpty {
                     inputPasscode.removeLast()
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 }
             }, label: {
                 Image(systemName: "delete.backward")
@@ -113,6 +115,7 @@ public struct SetPasscodeView: View {
             Button(action: {
                 if inputPasscode.count < passcodeLength {
                     inputPasscode.append("0")
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 }
             }, label: {
                 Text("0")

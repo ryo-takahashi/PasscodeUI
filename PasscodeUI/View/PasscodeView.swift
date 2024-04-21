@@ -142,7 +142,6 @@ public struct PasscodeView: View {
             if isBiometricAvailable {
                 /// Requesting Biometric Unlock
                 if let isSuccess = try? await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Unlock the View"), isSuccess {
-                    print("Unlocked")
                     unlock()
                 }
             }
@@ -203,6 +202,7 @@ public struct PasscodeView: View {
                 Button(action: {
                     if inputPasscode.count < passcodeLength {
                         inputPasscode.append("\(number)")
+                        UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                     }
                 }, label: {
                     Text("\(number)")
@@ -218,6 +218,7 @@ public struct PasscodeView: View {
             Button(action: {
                 if !inputPasscode.isEmpty {
                     inputPasscode.removeLast()
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 }
             }, label: {
                 Image(systemName: "delete.backward")
@@ -231,6 +232,7 @@ public struct PasscodeView: View {
             Button(action: {
                 if inputPasscode.count < passcodeLength {
                     inputPasscode.append("0")
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 }
             }, label: {
                 Text("0")
@@ -245,6 +247,7 @@ public struct PasscodeView: View {
                 Button {
                     inputPasscode = ""
                     isEnterPasscodeButton = false
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 } label: {
                     Text("キャンセル")
                 }
@@ -257,6 +260,7 @@ public struct PasscodeView: View {
                 if isValidPasscode {
                     unlock()
                 } else {
+                    UINotificationFeedbackGenerator().notificationOccurred(.error)
                     inputPasscode = ""
                     animateWrongPasscode.toggle()
                 }
