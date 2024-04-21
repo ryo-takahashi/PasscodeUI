@@ -18,11 +18,8 @@ let package = Package(
         .target(
             name: "PasscodeUI",
             path: "PasscodeUI",
-            sources: [
-                "Sources"
-            ],
             resources: [
-                .process("Resources")
+                .copy("Sources/Localizable.xcstrings")
             ]
         ),
     ],

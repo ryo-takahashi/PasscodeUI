@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A5CF6D22BD4F49000BD9A1E /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6CB2BD4F49000BD9A1E /* PasscodeLockType.swift */; };
-		5A5CF6D32BD4F49000BD9A1E /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6CD2BD4F49000BD9A1E /* Shake.swift */; };
-		5A5CF6D42BD4F49000BD9A1E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6CE2BD4F49000BD9A1E /* PasscodeView.swift */; };
-		5A5CF6D52BD4F49000BD9A1E /* SetPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6CF2BD4F49000BD9A1E /* SetPasscodeView.swift */; };
-		5A5CF6D62BD4F49000BD9A1E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CF6D12BD4F49000BD9A1E /* Localizable.xcstrings */; };
+		5A5CF6DD2BD4F93D00BD9A1E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CF6D82BD4F93D00BD9A1E /* Localizable.xcstrings */; };
+		5A5CF6DE2BD4F93D00BD9A1E /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6D92BD4F93D00BD9A1E /* Shake.swift */; };
+		5A5CF6DF2BD4F93D00BD9A1E /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */; };
+		5A5CF6E02BD4F93D00BD9A1E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */; };
+		5A5CF6E12BD4F93D00BD9A1E /* SetPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */; };
 		5AA09E192BD3F35F006BC8E5 /* PasscodeUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */; };
 		5AA09E1B2BD3F35F006BC8E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */; };
 		5AA09E1D2BD3F361006BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA09E1C2BD3F361006BC8E5 /* Assets.xcassets */; };
@@ -54,11 +54,11 @@
 
 /* Begin PBXFileReference section */
 		5A5CF6C62BD4F06E00BD9A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		5A5CF6CB2BD4F49000BD9A1E /* PasscodeLockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockType.swift; sourceTree = "<group>"; };
-		5A5CF6CD2BD4F49000BD9A1E /* Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
-		5A5CF6CE2BD4F49000BD9A1E /* PasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
-		5A5CF6CF2BD4F49000BD9A1E /* SetPasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasscodeView.swift; sourceTree = "<group>"; };
-		5A5CF6D12BD4F49000BD9A1E /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		5A5CF6D82BD4F93D00BD9A1E /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		5A5CF6D92BD4F93D00BD9A1E /* Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockType.swift; sourceTree = "<group>"; };
+		5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasscodeView.swift; sourceTree = "<group>"; };
 		5AA09E152BD3F35F006BC8E5 /* PasscodeUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeUIApp.swift; sourceTree = "<group>"; };
 		5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,39 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A5CF6C92BD4F49000BD9A1E /* Sources */ = {
+		5A5CF6D72BD4F93D00BD9A1E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5A5CF6CA2BD4F49000BD9A1E /* Model */,
-				5A5CF6CC2BD4F49000BD9A1E /* View */,
+				5A5CF6D82BD4F93D00BD9A1E /* Localizable.xcstrings */,
+				5A5CF6D92BD4F93D00BD9A1E /* Shake.swift */,
+				5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */,
+				5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */,
+				5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		5A5CF6CA2BD4F49000BD9A1E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5A5CF6CB2BD4F49000BD9A1E /* PasscodeLockType.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5A5CF6CC2BD4F49000BD9A1E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				5A5CF6CD2BD4F49000BD9A1E /* Shake.swift */,
-				5A5CF6CE2BD4F49000BD9A1E /* PasscodeView.swift */,
-				5A5CF6CF2BD4F49000BD9A1E /* SetPasscodeView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5A5CF6D02BD4F49000BD9A1E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5A5CF6D12BD4F49000BD9A1E /* Localizable.xcstrings */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5AA09E0C2BD3F35F006BC8E5 = {
@@ -183,8 +160,7 @@
 		5AA09E4B2BD3F439006BC8E5 /* PasscodeUI */ = {
 			isa = PBXGroup;
 			children = (
-				5A5CF6D02BD4F49000BD9A1E /* Resources */,
-				5A5CF6C92BD4F49000BD9A1E /* Sources */,
+				5A5CF6D72BD4F93D00BD9A1E /* Sources */,
 			);
 			path = PasscodeUI;
 			sourceTree = "<group>";
@@ -321,7 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5CF6D62BD4F49000BD9A1E /* Localizable.xcstrings in Resources */,
+				5A5CF6DD2BD4F93D00BD9A1E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5CF6D42BD4F49000BD9A1E /* PasscodeView.swift in Sources */,
-				5A5CF6D52BD4F49000BD9A1E /* SetPasscodeView.swift in Sources */,
-				5A5CF6D32BD4F49000BD9A1E /* Shake.swift in Sources */,
-				5A5CF6D22BD4F49000BD9A1E /* PasscodeLockType.swift in Sources */,
+				5A5CF6E02BD4F93D00BD9A1E /* PasscodeView.swift in Sources */,
+				5A5CF6E12BD4F93D00BD9A1E /* SetPasscodeView.swift in Sources */,
+				5A5CF6DF2BD4F93D00BD9A1E /* PasscodeLockType.swift in Sources */,
+				5A5CF6DE2BD4F93D00BD9A1E /* Shake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
