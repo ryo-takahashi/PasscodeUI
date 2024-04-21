@@ -10,6 +10,7 @@ public struct PasscodeView: View {
     @State private var animateWrongPasscode: Bool = false
     @State private var isShowNoBiometricAccessNotice: Bool = false
     @State private var isEnterPasscodeButton: Bool = false
+    @State private var isShowLockView: Bool = true
     @Environment(\.verticalSizeClass) private var verticalSizeClass
     
     public init(passcodeLength: Int, lockType: PasscodeLockType, unlock: @escaping () -> Void) {
@@ -23,15 +24,17 @@ public struct PasscodeView: View {
             Rectangle()
                 .fill(.black)
                 .ignoresSafeArea()
-            
-            switch lockType {
-            case .onlyBiometric:
-                OnlyBiometricView()
-            case .onlyPasscode(let passcode):
-                OnlyPasscodeView(passcode: passcode)
-            case .both(let passcode):
-                BothView(passcode: passcode)
+            Group {
+                switch lockType {
+                case .onlyBiometric:
+                    OnlyBiometricView()
+                case .onlyPasscode(let passcode):
+                    OnlyPasscodeView(passcode: passcode)
+                case .both(let passcode):
+                    BothView(passcode: passcode)
+                }
             }
+            .opacity(isShowLockView ? 1 : 0)
         }
         .onAppear(perform: onAppear)
         .environment(\.colorScheme, .dark)
@@ -143,6 +146,9 @@ public struct PasscodeView: View {
                 /// Requesting Biometric Unlock
                 let localizedReason = String(localized: "Unlock the View")
                 if let isSuccess = try? await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: localizedReason), isSuccess {
+                    withAnimation {
+                        isShowLockView = false
+                    }
                     unlock()
                 }
             }
@@ -259,6 +265,9 @@ public struct PasscodeView: View {
             if newValue.count == passcodeLength {
                 let isValidPasscode = correctPasscode == inputPasscode
                 if isValidPasscode {
+                    withAnimation {
+                        isShowLockView = false
+                    }
                     unlock()
                 } else {
                     UINotificationFeedbackGenerator().notificationOccurred(.error)
