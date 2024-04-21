@@ -146,10 +146,7 @@ public struct PasscodeView: View {
                 /// Requesting Biometric Unlock
                 let localizedReason = String(localized: "Unlock the View")
                 if let isSuccess = try? await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: localizedReason), isSuccess {
-                    withAnimation {
-                        isShowLockView = false
-                    }
-                    unlock()
+                    unlockWithAnimate()
                 }
             }
 
@@ -265,10 +262,7 @@ public struct PasscodeView: View {
             if newValue.count == passcodeLength {
                 let isValidPasscode = correctPasscode == inputPasscode
                 if isValidPasscode {
-                    withAnimation {
-                        isShowLockView = false
-                    }
-                    unlock()
+                    unlockWithAnimate()
                 } else {
                     UINotificationFeedbackGenerator().notificationOccurred(.error)
                     inputPasscode = ""
@@ -276,6 +270,18 @@ public struct PasscodeView: View {
                 }
             }
         }
+    }
+    
+    private func unlockWithAnimate() {
+        Task {
+            withAnimation(.linear(duration: 0.1)) { // 0.1 seconds
+                isShowLockView = false
+            }
+            // sleep
+            try? await Task.sleep(nanoseconds: 100_000_000) // 0.1 seconds
+            unlock()
+        }
+        
     }
 }
 
