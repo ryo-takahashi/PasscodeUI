@@ -12,6 +12,7 @@
 		5A5CF6DF2BD4F93D00BD9A1E /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */; };
 		5A5CF6E02BD4F93D00BD9A1E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */; };
 		5A5CF6E12BD4F93D00BD9A1E /* SetPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */; };
+		5A5CF6E32BD4FD6E00BD9A1E /* resource_bundle_accessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CF6E22BD4FD6E00BD9A1E /* resource_bundle_accessor.swift */; };
 		5AA09E192BD3F35F006BC8E5 /* PasscodeUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */; };
 		5AA09E1B2BD3F35F006BC8E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */; };
 		5AA09E1D2BD3F361006BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA09E1C2BD3F361006BC8E5 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockType.swift; sourceTree = "<group>"; };
 		5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasscodeView.swift; sourceTree = "<group>"; };
+		5A5CF6E22BD4FD6E00BD9A1E /* resource_bundle_accessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resource_bundle_accessor.swift; sourceTree = "<group>"; };
 		5AA09E152BD3F35F006BC8E5 /* PasscodeUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA09E182BD3F35F006BC8E5 /* PasscodeUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeUIApp.swift; sourceTree = "<group>"; };
 		5AA09E1A2BD3F35F006BC8E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				5A5CF6DA2BD4F93D00BD9A1E /* PasscodeLockType.swift */,
 				5A5CF6DB2BD4F93D00BD9A1E /* PasscodeView.swift */,
 				5A5CF6DC2BD4F93D00BD9A1E /* SetPasscodeView.swift */,
+				5A5CF6E22BD4FD6E00BD9A1E /* resource_bundle_accessor.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5CF6E02BD4F93D00BD9A1E /* PasscodeView.swift in Sources */,
+				5A5CF6E32BD4FD6E00BD9A1E /* resource_bundle_accessor.swift in Sources */,
 				5A5CF6E12BD4F93D00BD9A1E /* SetPasscodeView.swift in Sources */,
 				5A5CF6DF2BD4F93D00BD9A1E /* PasscodeLockType.swift in Sources */,
 				5A5CF6DE2BD4F93D00BD9A1E /* Shake.swift in Sources */,

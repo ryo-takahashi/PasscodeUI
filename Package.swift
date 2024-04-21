@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version: 5.9
 
 import PackageDescription
 
@@ -17,9 +17,9 @@ let package = Package(
     targets: [
         .target(
             name: "PasscodeUI",
-            path: "PasscodeUI",
+            path: "PasscodeUI/Sources",
             resources: [
-                .copy("Sources/Localizable.xcstrings")
+                .process("Localizable.xcstrings")
             ]
         ),
     ],

@@ -59,7 +59,7 @@ public struct SetPasscodeView: View {
     public func ContentView() -> some View {
         Spacer()
         VStack(spacing: 16) {
-            Text("Enter your passcode")
+            Text("Enter your passcode", bundle: .module)
                 .font(.body)
             HStack(spacing: 10) {
                 ForEach(0..<passcodeLength, id: \.self) { index in
