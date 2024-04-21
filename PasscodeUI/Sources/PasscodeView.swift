@@ -34,6 +34,7 @@ public struct PasscodeView: View {
                     BothView(passcode: passcode)
                 }
             }
+            .offset(y: isShowLockView ? 0 : -100)
             .opacity(isShowLockView ? 1 : 0)
         }
         .onAppear(perform: onAppear)
@@ -50,9 +51,9 @@ public struct PasscodeView: View {
                     Image(systemName: "lock.app.dashed")
                         .font(.title)
                         .foregroundStyle(.gray)
-                    Text("Locked")
+                    Text("Locked", bundle: .module)
                         .font(.title3.bold())
-                    Text("Open the app settings and turn on Face ID permissions")
+                    Text("Open the app settings and turn on Face ID permissions", bundle: .module)
                         .font(.callout)
                         .foregroundStyle(.gray)
                         .multilineTextAlignment(.center)
@@ -60,12 +61,12 @@ public struct PasscodeView: View {
                         let url = URL(string: UIApplication.openSettingsURLString)!
                         UIApplication.shared.open(url, options: [:], completionHandler: nil)
                     } label: {
-                        Text("Open settings")
+                        Text("Open settings", bundle: .module)
                     }
                     Button {
                         isEnterPasscodeButton = true
                     } label: {
-                        Text("Enter passcode")
+                        Text("Enter passcode", bundle: .module)
                     }
                 }
                 .padding(.horizontal, 48)
@@ -76,7 +77,7 @@ public struct PasscodeView: View {
                     Button {
                         isEnterPasscodeButton = true
                     } label: {
-                        Text("Enter passcode")
+                        Text("Enter passcode", bundle: .module)
                     }
                 }
             }
@@ -94,9 +95,9 @@ public struct PasscodeView: View {
                 Image(systemName: "lock.app.dashed")
                     .font(.title)
                     .foregroundStyle(.gray)
-                Text("Locked")
+                Text("Locked", bundle: .module)
                     .font(.title3.bold())
-                Text("Open the app settings and turn on Face ID permissions")
+                Text("Open the app settings and turn on Face ID permissions", bundle: .module)
                     .font(.callout)
                     .foregroundStyle(.gray)
                     .multilineTextAlignment(.center)
@@ -104,7 +105,7 @@ public struct PasscodeView: View {
                     let url = URL(string: UIApplication.openSettingsURLString)!
                     UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 } label: {
-                    Text("Open settings")
+                    Text("Open settings", bundle: .module)
                 }
             }
             .padding(.horizontal, 48)
@@ -118,7 +119,7 @@ public struct PasscodeView: View {
             Image(systemName: "faceid")
                 .font(.largeTitle)
             
-            Text("Tap to unlock")
+            Text("Tap to unlock", bundle: .module)
                 .font(.caption2)
                 .foregroundStyle(.gray)
         }
@@ -144,7 +145,7 @@ public struct PasscodeView: View {
             let isBiometricAvailable = LAContext().canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
             if isBiometricAvailable {
                 /// Requesting Biometric Unlock
-                let localizedReason = String(localized: "Unlock the View")
+                let localizedReason = String(localized: "Unlock the View", bundle: .module)
                 if let isSuccess = try? await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: localizedReason), isSuccess {
                     unlockWithAnimate()
                 }
@@ -178,7 +179,7 @@ public struct PasscodeView: View {
     private func NumberPadPinContentView(isShowBackButton: Bool, correctPasscode: String) -> some View {
         Spacer()
         VStack(spacing: 16) {
-            Text("Enter passcode")
+            Text("Enter passcode", bundle: .module)
                 .font(.body)
             
             HStack(spacing: 10) {
@@ -209,7 +210,7 @@ public struct PasscodeView: View {
                         UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                     }
                 }, label: {
-                    Text("\(number)")
+                    Text("\(number)", bundle: .module)
                         .font(.title)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 20)
@@ -253,7 +254,7 @@ public struct PasscodeView: View {
                     isEnterPasscodeButton = false
                     UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 } label: {
-                    Text("Cancel")
+                    Text("Cancel", bundle: .module)
                 }
                 .tint(.white)
             }
